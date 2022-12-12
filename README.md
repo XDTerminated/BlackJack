@@ -102,3 +102,43 @@ public Class Number {
 We declared a method addNumbers in our Number class by specifying the accessor, in this case public, a return type, in this case int, and the name of the function. We then specify the method name, and any parameters. Then we have a line of code inside the function that returns what x + a is. Obviously, a method can contain a lot more than one line, but in this case, one line is fine. 
 
 In the class, `x` is an attribute that stores a number.
+
+
+We can call this method in our main method like this:
+
+```
+public Class Main {
+  public static void main(String[] args) {
+    Number myNumber = new Number(5);
+    System.out.println(myNumber.addNumbers(10)); // This is how we can call a method from a class. This will return 5.
+  }
+}
+```
+
+### The `Static` Keyword
+
+There are a lot of times when we don't want to create an instance of class but still want to be able to acess the methods and attributes from the class. That's where the `static` keyword comes in.
+
+To start we create a new class and create a method inside:
+
+```
+Class StaticClass {
+  public static int addNumbers(int a, int b) { 
+    // The static keword tells the class that we can use this method without initializing an instance of the it.
+    return a + b;
+  }
+}
+```
+
+In our main method, we can call this method:
+
+```
+public Class Main {
+  public static void main(String[] args) {
+    System.out.println(StaticClass.addNumbers(a + b));
+  }
+}
+```
+
+### The `Abstract` Keyword
+
