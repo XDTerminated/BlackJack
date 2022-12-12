@@ -171,3 +171,11 @@ public class ExtendedClass extends AbstractClass {
 When we extend the class, we can override (re-write) all of the methods within to whatever we need the class to do.
 
 ****We don't have to use the @override keyword, however, it is good practice to do so to tell whoever is reading our code that the method is overriden.****
+
+
+
+## Creating A Game
+
+Now that you have some basic knowledge about classes, you will create a Black Jack game using the starter code provided in Blackjack.java, Player.java and Card.java files.
+
+Note: You will not be be required to make abstract and static classes and use inheritance in this project.
