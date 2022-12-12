@@ -140,5 +140,34 @@ public Class Main {
 }
 ```
 
-### The `Abstract` Keyword
+### The `Abstract` And `Extends` Keyword
 
+The `abstract` keyword in java is somewhat similar to the static keyword in that it doesn't allow you to create an instance of the class. However, in the case of an abstract class, you can only use it by inheriting the class using the `extends` keyword. 
+
+The `extends` keyword allows you to create a child class of a parent class. The child class can then acess and `override` the methods in the parent class and access all the attributes from the parent class.
+
+To create an abstract class, start by creating a new class and using the `abstract` keyword.
+
+```
+public abstract AbstractClass {
+  
+  public static int addNumbers(int a, int b) {
+    return 0;
+  }
+}
+```
+
+Then, to use the class, we can create a new class to extend this class.
+
+```
+public class extends AbstractClass {
+  @override
+  public static int addNumbers(int a, int b) {
+    return a + b;
+  }
+}
+```
+
+When we extend the class, we can override (re-write) all of the methods within to whatever we need the class to do.
+
+****We don't have to use the @override keyword, however, it is good practice to do so to tell whoever is reading our code that the method is overriden.****
