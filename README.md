@@ -73,4 +73,32 @@ public Class Number {
 
 Java classes can consist of many attributes and methods depending on what you want them to do.
 
-##### Attributes
+#### Attributes
+
+Attributes in a class are just pieces of data that associate with the class
+
+#### Methods
+
+Methods are blocks of code that allow an instance of a class to do certain things that when the method is called.
+
+To create a method in a class, we can do the following:
+
+```
+public Class Number {
+  
+  int x;
+
+  // Constructor
+  public Number(int number) {
+    x = number;
+  }
+  
+  public int addNumbers(int a) {
+    return x + a;
+  }
+}
+```
+
+We declared a method addNumbers in our Number class by specifying the accessor, in this case public, a return type, in this case int, and the name of the function. We then specify the method name, and any parameters. Then we have a line of code inside the function that returns what x + a is. Obviously, a method can contain a lot more than one line, but in this case, one line is fine. 
+
+In the class, `x` is an attribute that stores a number.
