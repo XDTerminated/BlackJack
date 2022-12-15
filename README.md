@@ -12,7 +12,7 @@ For Example: In real life, we can say that a car is an object. It has certain at
 We can start by creating a class by using the keyword `Class`.
 
 ```
-public Class Number {
+public class Number {
   int x = 5;
 }
 ```
@@ -26,7 +26,7 @@ A Java program needs a starting point when running. It starts executing code fro
 We can initialize a `main` method inside of a class by doing the following.
 
 ```
-public Class Main {
+public class Main {
   public static void main(String[] args) {
     // Some code...
   }
@@ -40,7 +40,7 @@ We first create a class. Then inside, we create the main method by using the lin
 Java objects are created from classes. Since we already have a Number class, we can create a Number object by going into our `main` method and creating an object by doing the following:
 
 ```
-public Class Main {
+public class Main {
   public static void main(String[] args) {
     Number myNumber = new Number();
   }
@@ -58,7 +58,7 @@ Most classes have a constructor inside that is called when creating an instance 
 
 We can create a constructor for our number class by doing the following:
 ```
-public Class Number {
+public class Number {
   
   int x;
 
@@ -84,7 +84,7 @@ Methods are blocks of code that allow an instance of a class to do certain thing
 To create a method in a class, we can do the following:
 
 ```
-public Class Number {
+public class Number {
   
   int x;
 
@@ -107,7 +107,7 @@ In the class, `x` is an attribute that stores a number.
 We can call this method in our main method like this:
 
 ```
-public Class Main {
+public class Main {
   public static void main(String[] args) {
     Number myNumber = new Number(5);
     System.out.println(myNumber.addNumbers(10)); // This is how we can call a method from a class. This will return 5.
@@ -122,7 +122,7 @@ There are a lot of times when we don't want to create an instance of class but s
 To start we create a new class and create a method inside:
 
 ```
-Class StaticClass {
+public class StaticClass {
   public static int addNumbers(int a, int b) { 
     // The static keword tells the class that we can use this method without initializing an instance of the it.
     return a + b;
@@ -133,7 +133,7 @@ Class StaticClass {
 In our main method, we can call this method:
 
 ```
-public Class Main {
+public class Main {
   public static void main(String[] args) {
     System.out.println(StaticClass.addNumbers(a + b));
   }
@@ -149,7 +149,7 @@ The `extends` keyword allows you to create a child class of a parent class. The 
 To create an abstract class, start by creating a new class and using the `abstract` keyword.
 
 ```
-public abstract AbstractClass {
+public abstract class AbstractClass {
   
   public static int addNumbers(int a, int b) {
     return 0;
@@ -160,7 +160,7 @@ public abstract AbstractClass {
 Then, to use the class, we can create a new class to extend this class.
 
 ```
-public class extends AbstractClass {
+public class ExtendedClass extends AbstractClass {
   @override
   public static int addNumbers(int a, int b) {
     return a + b;
@@ -171,3 +171,11 @@ public class extends AbstractClass {
 When we extend the class, we can override (re-write) all of the methods within to whatever we need the class to do.
 
 ****We don't have to use the @override keyword, however, it is good practice to do so to tell whoever is reading our code that the method is overriden.****
+
+
+
+## Creating A Game
+
+Now that you have some basic knowledge about classes, you will create a Black Jack game using the starter code provided in Blackjack.java, Player.java and Card.java files.
+
+Note: You will not be be required to make abstract and static classes and use inheritance in this project.
