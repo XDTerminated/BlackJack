@@ -176,6 +176,6 @@ When we extend the class, we can override (re-write) all of the methods within t
 
 ## Creating A Game
 
-Now that you have some basic knowledge about classes, you will create a Black Jack game using the starter code provided in Blackjack.java, Player.java and Card.java files.
+Now that you have some basic knowledge about classes, you will create a Black Jack game using the starter code provided in Blackjack.java, Player.java and Card.java files. All the steps are in the starter code.
 
 Note: You will not be be required to make abstract and static classes and use inheritance in this project.
