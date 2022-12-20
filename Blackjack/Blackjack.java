@@ -12,6 +12,7 @@ public class Blackjack {
     deck = new ArrayList<Card>();
     createDeck();
 
+    // Create two players, player and dealer
     player = new Player("Player");
     dealer = new Player("Dealer");
 
@@ -74,6 +75,7 @@ public class Blackjack {
     scanner.close();
   }
 
+  // Creates deck and shuffles it.
   private static void createDeck() {
     String[] suits = {"hearts", "diamonds", "spades", "clubs"};
     String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};

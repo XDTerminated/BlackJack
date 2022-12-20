@@ -3,9 +3,9 @@ public class Card {
     private String rank;
     private int value;
 
-    // Create a constructor for the values above
+    // TODO: Create a constructor for the values above
 
-    // Create getters
+    // TODO: Create getters
 
     
   }

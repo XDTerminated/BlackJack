@@ -9,11 +9,11 @@ public class Player {
   private int total;
 
   public Player(String name) {
-    // Create a constructor that sets name to name, hand to a new ArrayList and total to 0.
+    // TODO Create a constructor that sets name to name, hand to a new ArrayList and total to 0.
 
   }
 
-  // Create Getters
+  // TODO: Create Getters
   public String getName() {
     return
   }

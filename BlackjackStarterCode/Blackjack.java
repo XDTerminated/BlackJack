@@ -7,22 +7,22 @@ import java.util.Scanner;
 public class Blackjack {
   private static ArrayList<Card> deck;
 
-  // Create 2 player objects, one for the dealer and one for the player
+  // TODO: Create 2 player objects, one for the dealer and one for the player
 
   public static void main(String[] args) {
 
-    // set the deck to a new arraylist of Card and call the createDeck function
+    // TODO: set the deck to a new arraylist of Card and call the createDeck function
 
-    // Call the constructor for both the player and the dealer and name them Player, Dealer
+    // TODO: Call the constructor for both the player and the dealer and name them Player, Dealer
 
 
 
     Scanner scanner = new Scanner(System.in);
     String input;
 
-    // deal initial cards
+    // TODO: Deal initial cards
 
-    // Add 2 cards to both the player and dealer and remove them from the deck
+    // TODO: Add 2 cards to both the player and dealer and remove them from the deck
 
     // show initial hands
     System.out.println("Dealer's hand: " + dealer.getHand().get(0).getRank() + " of " + dealer.getHand().get(0).getSuit() + " and [hidden]");
@@ -77,7 +77,7 @@ public class Blackjack {
     String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
     int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 
-    // Write code to add cards to the list Deck.
+    // TODO: Write code to add cards to the list Deck.
 
     Collections.shuffle(deck);
   }

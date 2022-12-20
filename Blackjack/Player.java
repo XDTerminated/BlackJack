@@ -13,6 +13,7 @@ public class Player {
     this.total = 0;
   }
 
+  // Getters
   public String getName() {
     return this.name;
   }
@@ -25,6 +26,7 @@ public class Player {
     return this.total;
   }
 
+  // Add and clear hand cards
   public void addCard(Card card) {
     this.hand.add(card);
     this.total += card.getValue();
