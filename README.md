@@ -86,7 +86,7 @@ To create a method in a class, we can do the following:
 ```
 public class Number {
   
-  int x;
+  private int x; // Variables declared in a class are usually set to be private. To access them from outside the class, we can use setters and getters.
 
   // Constructor
   public Number(int number) {
@@ -112,6 +112,22 @@ public class Main {
     Number myNumber = new Number(5);
     System.out.println(myNumber.addNumbers(10)); // This is how we can call a method from a class. This will return 5.
   }
+}
+```
+
+### Accessors and Modifiers (Setters and Getters)
+
+Setters and Getters are used to protect data, especially when creating classes. For each instance of a class, a getter method will return a value while the setter method set the value to something else.
+
+By convention, setters and getter methods names are started with `set` and `get` respectively. To create a setter and getter function, we can do the following in our number class:
+
+```
+public setX(int x) {
+    this.x = x; // The this keyword is generally used to refer to the current object in a method or constructor. This avoids confusion between class attributes and parameters with the same name.
+}
+
+public int getX() {
+    return this.x;
 }
 ```
 
